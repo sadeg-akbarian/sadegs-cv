@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  font-family: "Tilt Neon", cursive;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Lobster", cursive;
+}
+
+.pads {
+  padding: 25px 16px;
+}
+
+.top-header {
+  text-align: center;
+  background-color: darkorange;
+}
+
+main {
+  max-width: 1200px;
+}
