@@ -26,3 +26,28 @@ main {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+main > * {
+  margin-top: 80px;
+}
+
+a {
+  color: rgb(40, 21, 184);
+}
+
+a:hover {
+  background-color: cyan;
+}
+
+a:active {
+  background-color: darkgreen;
+}
+
+article + article {
+  border-top: 5px solid cadetblue;
+  padding-top: 55px;
+}
+
+.first-h3 {
+  padding-top: 15px;
+}
