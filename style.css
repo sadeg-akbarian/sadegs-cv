@@ -51,3 +51,12 @@ article + article {
 .first-h3 {
   padding-top: 15px;
 }
+
+*::selection {
+  color: rgb(56, 22, 88);
+  background-color: darkred;
+}
+
+.top-header p::after {
+  content: "🚀";
+}
