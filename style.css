@@ -19,7 +19,7 @@ h3 {
 
 .top-header {
   text-align: center;
-  background-color: darkorange;
+  background-color: rgb(66, 230, 99);
 }
 
 main {
@@ -59,4 +59,5 @@ article + article {
 
 .first-paragraph::after {
   content: "🚀";
+  font-size: 35px;
 }
