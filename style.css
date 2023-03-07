@@ -1,10 +1,18 @@
 * {
   box-sizing: border-box;
+}
+
+html {
   font-family: "Tilt Neon", cursive;
 }
 
 body {
   margin: 0;
+}
+
+*::selection {
+  color: rgb(56, 22, 88);
+  background-color: darkred;
 }
 
 h1,
@@ -13,21 +21,16 @@ h3 {
   font-family: "Lobster", cursive;
 }
 
-.pads {
-  padding: 25px 16px;
-}
-
 .top-header {
+  padding: 25px 16px;
   text-align: center;
   background-color: rgb(66, 230, 99);
 }
 
 main {
+  padding: 25px 16px;
   max-width: 1200px;
   margin: 0 auto;
-}
-
-main > * {
   margin-top: 80px;
 }
 
@@ -36,11 +39,11 @@ a {
 }
 
 a:hover {
-  background-color: cyan;
+  background-color: rgb(255, 0, 162);
 }
 
 a:active {
-  background-color: darkgreen;
+  background-color: rgb(246, 246, 8);
 }
 
 article + article {
@@ -50,11 +53,6 @@ article + article {
 
 .first-h3 {
   padding-top: 15px;
-}
-
-*::selection {
-  color: rgb(56, 22, 88);
-  background-color: darkred;
 }
 
 .first-paragraph::after {
