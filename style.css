@@ -34,8 +34,21 @@ h3 {
 
 .top-header {
   padding: 25px 16px;
+  padding-top: 50px;
   text-align: center;
   background-color: rgb(66, 230, 99);
+}
+
+aside {
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  font-size: 25px;
+  font-weight: 1000;
+  padding: 8px;
+  border: 2px solid;
+  border-radius: 10px;
+  background-color: rgb(169, 95, 238);
 }
 
 .first-paragraph::after {
@@ -76,18 +89,25 @@ main {
   margin-top: 40px;
 }
 
+.top-headings-of-main {
+  position: relative;
+  right: 15px;
+}
+
 .profile-article {
   padding-bottom: 45px;
 }
 
-article + article {
+.border {
   border-top: 5px solid cadetblue;
   padding-top: 55px;
   padding-bottom: 45px;
+  padding-left: 15px;
+  margin-left: -15px;
 }
 
-.experiences {
-  margin-bottom: 30px;
+.polycopy {
+  margin-top: 30px;
 }
 
 section + section {
