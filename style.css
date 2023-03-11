@@ -14,6 +14,7 @@ html {
 
 body {
   margin: 0;
+  height: 265vh;
 }
 
 *::selection {
@@ -25,6 +26,10 @@ h1,
 h2,
 h3 {
   font-family: "Lobster", cursive;
+}
+
+h2 {
+  padding-top: 30px;
 }
 
 /*..............................All top-header-styles
@@ -100,7 +105,7 @@ main {
 
 .border {
   border-top: 5px solid cadetblue;
-  padding-top: 55px;
+  padding-top: 25px;
   padding-bottom: 45px;
   padding-left: 15px;
   margin-left: -15px;
