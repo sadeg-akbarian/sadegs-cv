@@ -18,6 +18,18 @@ body {
   height: 265vh;
 }
 
+@media screen and (min-width: 786px) {
+  html {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 30px;
+  }
+}
+
 *::selection {
   color: rgb(56, 22, 88);
   background-color: darkred;
@@ -69,6 +81,19 @@ aside {
   background-color: rgb(169, 95, 238);
 }
 
+@media screen and (min-width: 992px) {
+  aside {
+    position: fixed;
+  }
+}
+
+@media print {
+  aside,
+  nav {
+    display: none;
+  }
+}
+
 .first-paragraph::after {
   content: "🚀";
   font-size: 1.75rem;
@@ -116,12 +141,25 @@ main {
   padding-bottom: 2.25rem;
 }
 
+@media screen and (min-width: 786px) {
+  .profile-article {
+    padding-bottom: 100px;
+  }
+}
+
 .border {
   border-top: 0.25rem solid cadetblue;
   padding-top: 1.25rem;
   padding-bottom: 2.25rem;
   padding-left: 0.75rem;
   margin-left: -0.75rem;
+}
+
+@media screen and (min-width: 786px) {
+  .border {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
 }
 
 .polycopy {
