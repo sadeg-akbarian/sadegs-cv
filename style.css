@@ -15,18 +15,21 @@ html {
 
 body {
   margin: 0;
-  height: 265vh;
+  height: 400vh;
 }
 
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 768px) {
   html {
-    font-size: 25px;
+    font-size: 23px;
+    height: 455vh;
   }
 }
 
 @media screen and (min-width: 992px) {
   html {
-    font-size: 30px;
+    font-size: 25px;
+    height: 510vh;
+    width
   }
 }
 
@@ -52,17 +55,17 @@ h2 {
 
 .top-header {
   padding: 2rem 1rem;
-  padding-top: 2.5rem;
+  padding-top: 4rem;
   text-align: center;
   background-color: rgb(66, 230, 99);
 }
 
-.h1_p {
-  font-size: 3rem;
+h1 {
+  font-size: 0.8em;
 }
 
-h1 {
-  font-size: 1em;
+.h1_p {
+  font-size: 3rem;
 }
 
 .first-paragraph {
@@ -99,25 +102,45 @@ aside {
   font-size: 1.75rem;
 }
 
-a {
-  color: rgb(40, 21, 184);
-  display: block;
-  width: 5rem;
-  margin: 0 auto;
+nav {
+  display: flex;
+  flex-direction: column;
 }
 
-a + a {
-  margin-top: 0.5rem;
+@media screen and (min-width: 768px) {
+  nav {
+    flex-direction: row;
+  }
+}
+
+a {
+  color: rgb (40, 21, 184);
+  margin: auto;
 }
 
 a:hover {
   background-color: rgb(255, 0, 162);
   width: 6rem;
-  margin: 0.5rem auto 0;
+  margin: auto;
 }
 
 a:active {
   background-color: rgb(246, 246, 8);
+}
+
+@media screen and (min-width: 992px) {
+  nav a:nth-child(1) {
+    margin-right: 90px;
+  } 
+
+  nav a:nth-child(2),
+  nav a:nth-child(3) {
+    margin: 0 90px 0;
+  }  
+
+  nav a:nth-child(4) {
+    margin-left: 90px;
+  } 
 }
 
 /*...................................All main styles
@@ -141,7 +164,7 @@ main {
   padding-bottom: 2.25rem;
 }
 
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 768px) {
   .profile-article {
     padding-bottom: 100px;
   }
@@ -155,7 +178,7 @@ main {
   margin-left: -0.75rem;
 }
 
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 768px) {
   .border {
     padding-top: 50px;
     padding-bottom: 100px;
@@ -173,7 +196,23 @@ section + section {
 .job-heading,
 .sub-heading {
   display: inline;
-  margin-right: 0.75rem;
+  margin-top: 0;
+}
+
+.experiences-headers {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .experiences-headers {
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .job-heading {
+    margin-right: 19px;
+  }
 }
 
 .mail {
