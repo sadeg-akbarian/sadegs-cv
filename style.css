@@ -116,6 +116,7 @@ nav {
 a {
   color: rgb (40, 21, 184);
   margin: auto;
+  padding: 0.55rem 0;
 }
 
 a:hover {
