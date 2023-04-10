@@ -11,11 +11,32 @@ html {
   font-family: "Tilt Neon", cursive;
   direction: ltr;
   font-size: 20px;
+  --selection-color: white;
+  --selection-background: darkred;
+  --top-header-backcolor1: rgb(66, 230, 99);
+  --top-header-backcolor2: rgb(240, 84, 22);
+  --aside-backcolor: rgb(169, 95, 238);
+  --a-fontcolor: rgb(52, 30, 221);
+  --a-hovercolor: rgb(183, 13, 121);
+  --a-activecolor: rgb(246, 246, 8);
+  --footer-color1: red;
+  --footer-color2: blue;
+  --page-background-color: white;
+  --page-text-color: black;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    --page-background-color: black;
+    --page-text-color: white;
+  }
 }
 
 body {
   margin: 0;
   height: 400vh;
+  background-color: var(--page-background-color);
+  color: var(--page-text-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -33,8 +54,8 @@ body {
 }
 
 *::selection {
-  color: rgb(56, 22, 88);
-  background-color: darkred;
+  color: var(--selection-color);
+  background-color: var(--selection-background);
 }
 
 h1,
@@ -56,11 +77,11 @@ h2 {
   padding: 2rem 1rem;
   padding-top: 4rem;
   text-align: center;
-  background-color: rgb(66, 230, 99);
+  background-color: var(--top-header-backcolor1);
   background-image: linear-gradient(
     90deg,
-    rgb(240, 84, 22) 2rem,
-    rgb(66, 230, 99) 30rem
+    var(--top-header-backcolor2) 2rem,
+    var(--top-header-backcolor1) 30rem
   );
 }
 
@@ -85,7 +106,7 @@ aside {
   padding: 0.4rem;
   border: 0.1rem solid;
   border-radius: 0.5rem;
-  background-color: rgb(169, 95, 238);
+  background-color: var(--aside-backcolor);
 }
 
 @media screen and (min-width: 992px) {
@@ -118,17 +139,17 @@ nav {
 }
 
 a {
-  color: rgb (40, 21, 184);
+  color: var(--a-fontcolor);
   margin: 0.55rem auto;
 }
 
 a:hover {
-  background-color: rgb(183, 13, 121);
+  background-color: var(--a-hovercolor);
   margin: 0.55rem auto;
 }
 
 a:active {
-  background-color: rgb(246, 246, 8);
+  background-color: var(--a-activecolor);
 }
 
 @media screen and (min-width: 992px) {
@@ -175,7 +196,7 @@ main {
 }
 
 .border {
-  border-top: 0.25rem solid rgb(66, 230, 99);
+  border-top: 0.25rem solid var(--top-header-backcolor1);
   padding-top: 1.25rem;
   padding-bottom: 2.25rem;
   padding-left: 0.75rem;
@@ -233,7 +254,7 @@ section + section {
 ....................*/
 
 footer {
-  background-image: radial-gradient(red, blue);
+  background-image: radial-gradient(var(--footer-color1), var(--footer-color2));
 }
 
 .ending {
