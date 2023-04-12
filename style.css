@@ -19,6 +19,7 @@ html {
   --a-fontcolor: rgb(52, 30, 221);
   --a-hovercolor: rgb(183, 13, 121);
   --a-activecolor: rgb(246, 246, 8);
+  --a-focuscolor: black;
   --footer-color1: red;
   --footer-color2: blue;
   --page-background-color: white;
@@ -141,15 +142,21 @@ nav {
 a {
   color: var(--a-fontcolor);
   margin: 0.55rem auto;
+  transition: color 0.1s linear 0.05s, background-color 0.1s linear 0.1s;
 }
 
 a:hover {
   background-color: var(--a-hovercolor);
   margin: 0.55rem auto;
+  color: chartreuse;
 }
 
 a:active {
   background-color: var(--a-activecolor);
+}
+
+a:focus {
+  color: var(--a-focuscolor);
 }
 
 @media screen and (min-width: 992px) {
