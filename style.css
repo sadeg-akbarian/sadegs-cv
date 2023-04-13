@@ -7,10 +7,7 @@
   box-sizing: border-box;
 }
 
-html {
-  font-family: "Tilt Neon", cursive;
-  direction: ltr;
-  font-size: 20px;
+:root {
   --selection-color: white;
   --selection-background: darkred;
   --top-header-backcolor1: rgb(66, 230, 99);
@@ -24,6 +21,12 @@ html {
   --footer-color2: blue;
   --page-background-color: white;
   --page-text-color: black;
+}
+
+html {
+  font-family: "Tilt Neon", cursive;
+  direction: ltr;
+  font-size: 20px;
 }
 
 @media screen and (prefers-color-scheme: dark) {
