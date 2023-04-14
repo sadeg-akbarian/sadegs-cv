@@ -111,6 +111,14 @@ aside {
   border: 0.1rem solid;
   border-radius: 0.5rem;
   background-color: var(--aside-backcolor);
+  transform-origin: top right;
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.top-header:hover aside,
+.top-header:focus-within aside {
+  transform: scale(1.5);
+  background-color: aqua;
 }
 
 @media screen and (min-width: 992px) {
@@ -169,8 +177,7 @@ a:focus {
 
   nav a:nth-child(2),
   nav a:nth-child(3) {
-    margin-left: 90px;
-    margin-right: 90px;
+    margin-inline: 90px;
   }
 
   nav a:nth-child(4) {
