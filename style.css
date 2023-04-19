@@ -197,6 +197,17 @@ main {
   margin-top: 2rem;
 }
 
+@media screen and (min-width: 768px) {
+  .for-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .grid-divs {
+    padding-top: 100px;
+  }
+}
+
 .top-headings-of-main {
   position: relative;
   right: 0.75rem;
@@ -250,19 +261,12 @@ section + section {
   flex-direction: column;
 }
 
-@media screen and (min-width: 768px) {
-  .experiences-headers {
-    flex-direction: row;
-    align-items: baseline;
-  }
-
-  .job-heading {
-    margin-right: 19px;
-  }
-}
-
 .mail {
   display: initial;
+}
+
+address {
+  padding-top: 1.25rem;
 }
 
 /*.................................All footer styles
